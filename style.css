@@ -1,0 +1,91 @@
+body, html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 16px;
+    font-family: 'lato',sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.pimg1,.pimg2,.pimg3,.pimg4{
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    /* To remove the parallax effect, change the fixed in the background-attachment to scroll*/
+}
+
+.pimg1{
+    background-image:url('../images/pexels-lukas-kloeppel-466685.jpg') ;
+    min-height: 100%;
+}
+
+.pimg3{
+    background-image: url('../images/pexels-img1.jpg');
+    min-height: 440px;
+}
+
+.pimg2{
+    background-image: url('../images/pexels-img2.jpg');
+    min-height: 440px;
+}
+
+.pimg4{
+    background-image: url('../images/pexels-tatiana-fet-1105766.jpg');
+    min-height: 440px;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light{
+    background-color: #f4f4f4;
+}
+
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.ptext{
+     position: absolute;
+     top: 50%;
+     width:100%;
+     text-align: center;
+     color: #000;
+     font-size: 27px;
+     letter-spacing: 27px;
+     /* letter-spacing: 8px; */
+     text-transform: uppercase;
+     font-weight: 400;
+}
+
+.ptext .border{
+       background-color: #111;
+       color: #fff;
+       padding: 20px;
+       /* border-radius: 25%; */
+}
+
+.container{
+    background-color: #111;
+}
+
+.ptext .border .trans{
+    background: transparent;
+}
+
+@media(max-width:568px){
+.pimg1, .ping2, .ping3, .ping4{
+    background-attachment: scroll;
+}
+}
